@@ -11,11 +11,15 @@ nav {
     justify-content: space-between;
     padding: 20px 40px;
 }
-
+h2 {
+    display: flex;
+    border-radius: 20px;
+}
 body{
     background-color: blue;
-    background-image:linear-gradient(rgba(0,0,0,0.75)),url(BACKGROUND.jpeg);
+    background-image:linear-gradient(rgba(241, 239, 239, 0.75)),url(/images/BACKGROUND.jpeg);
     background-size: cover;
+   
 }
 nav ul {
     display: flex;
@@ -30,7 +34,7 @@ div {
 }
 button{
     display: flex;
-    border-radius: 20%;
+    border-radius: 15%;
     cursor: pointer;
     font-size: 21px;
     color: #243675;
@@ -44,15 +48,88 @@ button:hover{
 .menu-btn {
     display: none;
 }
+
+/*  .img {
+    width: 70px;
+    object-fit: cover;
+    height: 120px;
+} */
+ 
+
+
 /*        media queries   */
 @media (max-width: 768px) {
     nav ul {
         display: none;
     }
-    div {
+     /* div  {
+        display: none;
+    }  */
+    .menu {
         display: none;
     }
     .menu-btn {
         display: block;
     }
+}
+
+
+section {
+    /* background-color: blueviolet; */
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 30px 12px;
+    
+}
+
+.rightside{
+    width: 220px;
+    height: 220px;
+    /* background-color: blue; */
+    display: flex;
+    /* border-radius: 50%; */
+    max-width: 300px;
+    /* width: 100%; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.hero-image {
+    height: 85%;
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 10;
+}
+
+.back {
+    width: 60%;
+    height: 50%;
+    position: absolute;
+}
+.back-top{
+    background-color: rgba(240, 248, 255, 0);
+    top:0;
+    left: 0;
+}
+
+.back-bottom{
+    bottom: 0;
+    right: 0;
+    background-color: rgba(240, 248, 255, 0.233);
+    /* z-index: 20; */
+}
+.leftside {
+    
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 6px;
 }
